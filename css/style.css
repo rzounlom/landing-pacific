@@ -1,0 +1,145 @@
+/* Reset some default styles for clarity */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+  height: 5vh;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.landing {
+  /* margin-top: 5vh; */
+  height: 80vh;
+  border: 1px solid black;
+  background-image: url("https://media.istockphoto.com/id/1482915045/photo/multiracial-team-of-engineers-or-architects-having-a-meeting-in-an-office.jpg?s=2048x2048&w=is&k=20&c=3QtaOxMSVpDPWudjzt5OBZKqgkEjnB7lv5qgkxRYAOc=");
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.landing h1,
+.landing p {
+  text-shadow: darkgray 1px 0 10px;
+}
+
+.landing h1 {
+  font-size: 4rem;
+}
+
+.landing p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+/* Main Section styles */
+.main-content {
+  height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.main-content h2 {
+  margin-top: 30px;
+  color: white;
+}
+
+#about {
+  background-color: blue;
+}
+
+#services {
+  background-color: pink;
+}
+
+#portfolio {
+  background-color: red;
+}
+
+#services {
+  background-color: orange;
+}
+
+#contact {
+  background-color: teal;
+}
+
+/* Footer styles */
+.footer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .landing h1 {
+    font-size: 3.5rem;
+  }
+
+  .landing p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+}
+
+/* mobile breakpoint */
+@media (max-width: 400px) {
+  .navbar {
+    height: 10vh;
+  }
+
+  .landing h1 {
+    font-size: 2rem;
+  }
+
+  .landing p {
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 60%;
+  }
+}
